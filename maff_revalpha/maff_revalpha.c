@@ -7,24 +7,24 @@ void	ft_putchar(char ch)
 
 int     main(void)
 {
-        char    ch;
-        int     i;
+	char    ch;
+	int     i;
 
-        ch =    'z';
-        i = 1;
+	ch =    'z';
+	i = 1;
 
-        while (ch >= 'a')
-        {
-                if (i % 2 == 0)
-                        ft_putchar(ch - 32);
+	while (ch >= 'a')
+	{
+		if (i % 2 == 0)
+			ft_putchar(ch - 32);
 		else
-                        ft_putchar(ch);
-                ch--;
-                i++;
-        }
+			ft_putchar(ch);
+		ch--;
+		i++;
+	}
 
-        write(1, "\n", 1);
+	write(1, "\n", 1);
 
-        return (0);
+	return (0);
 }
 
